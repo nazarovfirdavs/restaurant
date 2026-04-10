@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Уютная кухня | Домашняя кухня в центре города</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+         <div class="top-bar">
+        <div class="left-group">
+            <div class="image_logo">
+                <img src="./images/logo.svg" alt="Логотип">
+            </div>
+            <div class="logo">
+                <h1><span style="color: #000;">Уютная</span> кухня</h1>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#">Меню</a>
+            <a id="navBookingLink">К бронированию</a>
+        </div>
+    </div>
+
+
+      <picture>
+    <source media="(max-width: 480px)"  srcset="./images/backround_mobile.jpg">
+    <img class="hero-background" src="./images/backround.jpg" alt="Фон" style="width: 100%; height: 420px; object-fit: cover;">
+</picture>
+
+
+      <div class="hero">
+        <div class="hero-text">
+          <h2>Домашняя кухня в центре города</h2>
+          <p>Бронируйте стол онлайн — мы подготовим всё к вашему приходу.</p>
+          <button class="btn-primary" id="heroBookingBtn">
+            Забронировать стол
+          </button>
+          <div class="hero-highlight">
+            Нравится атмосфера?
+            <span id="heroFormTrigger">перейти к форме бронирования </span>
+          </div>
+        </div>
+        <div class="hero-slide">
+        </div>
+      </div>
+
+      <div  
+         
+      >
+        <div style="width: 100%; max-width: 1200px"> 
+          <div class="slider-multi-container">  
+            <div class="slider-multi-wrapper">      
+              <div class="slider-multi-track" id="multiTrack">
+                <div class="slide-card">
+                  <img
+                    src="./images/first_image.jpg"
+                    alt="Уютная кухня"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/second_image.jpg"
+                    alt="Интерьер зала"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/third_image.jpg"
+                    alt="Домашняя еда"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/kitchen.jpg"
+                    alt="Тёплый вечер"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/salad.jpg"
+                    alt="Декор"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/kabab.jpg"
+                    alt="Завтрак"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/snake.jpg"
+                    alt="Ужин при свечах"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/ice_drink.jpg"
+                    alt="Повара"
+                  />
+                </div>
+                <div class="slide-card">
+                  <img
+                    src="./images/breakfast.jpg"
+                    alt="Десерты"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <button class="slider-multi-btn btn-multi-prev" id="multiPrevBtn">
+              ❮
+            </button>
+            <button class="slider-multi-btn btn-multi-next" id="multiNextBtn">
+              ❯
+            </button>
+          </div>
+          
+          <div class="multi-dots" id="multiDotsContainer"></div>
+        </div>
+      </div>
+      
+      <div style="background: #fefaf5; padding: 2rem; margin: 0;">
+    <div class="faq-section">
+        <h3>Частые вопросы</h3>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <strong>Часы работы</strong>
+                    <button class="toggle-btn" aria-label="Скрыть/показать ответ">−</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</p>
+                </div>
+       
+      </div>
+
+
+         <div class="faq-item">
+                <div class="faq-question">
+                    <strong>Как добраться</strong>
+                    <button class="toggle-btn" aria-label="Скрыть/показать ответ">−</button>
+                </div>
+                <div class="faq-answer">
+                    <p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <strong>Детям и особые пожелания</strong>
+                    <button class="toggle-btn" aria-label="Скрыть/показать ответ">−</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <div class="booking-form-section" id="bookingSection">
+        <h3>Бронирование стола</h3>
+        <p>Заполните поля — перезвоним для подтверждения.</p>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Имя *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="surname">Фамилия *</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Ваша фамилия"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.ru"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+7 (999) 123-45-67"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Отправить</button>
+        </form>
+      </div>
+
+      <footer>
+        <p>Firdavs Nazarov</p>
+      </footer>
+    </div>
+
+    <div id="successModal" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-icon">✅</div>
+        <h2>Заявка отправлена</h2>
+        <p>
+          Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.
+        </p>
+        <button class="modal-close-btn" id="closeModalBtn">Закрыть</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
